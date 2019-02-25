@@ -1,0 +1,11 @@
+syntax = "proto2";
+package gazebo_rad_msgs.msgs;
+
+message RadiationSource
+{
+  required double x                  = 1;
+  required double y                  = 2;
+  required double z                  = 3;
+  required string material           = 4;
+  required double activity           = 5;
+}
