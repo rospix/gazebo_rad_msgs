@@ -4,3 +4,4 @@ float64 y
 float64 z
 float64 activity
 string material
+int32 id
