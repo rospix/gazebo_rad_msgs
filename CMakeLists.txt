@@ -34,17 +34,20 @@ set(msgs
 ## Declare ROS messages, services and actions ##
 ################################################
 
-# messages for BRICK_DETECTION
 add_message_files(DIRECTORY ros_msgs/radiation_source FILES
 
   RadiationSource.msg
   )
 
-# # services for BRICK_GRASPING
-# add_service_files(DIRECTORY srv/brick_grasping FILES
+add_message_files(DIRECTORY ros_msgs/misc FILES
 
-#   BanArea.srv
-#   )
+  Vector3.msg
+  )
+
+add_message_files(DIRECTORY ros_msgs/plotting FILES
+
+  Cone.msg
+  )
 
 ## Generate added messages and services with any dependencies listed here
 generate_messages(DEPENDENCIES
