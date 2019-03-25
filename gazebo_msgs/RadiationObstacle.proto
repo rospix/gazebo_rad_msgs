@@ -1,0 +1,21 @@
+syntax = "proto2";
+package gazebo_rad_msgs.msgs;
+
+message RadiationObstacle
+{
+  required double pos_x               = 1;
+  required double pos_y               = 2;
+  required double pos_z               = 3;
+
+  required double ori_w               = 4;
+  required double ori_x               = 5;
+  required double ori_y               = 6;
+  required double ori_z               = 7;
+
+  required double scale_x             = 8;
+  required double scale_y             = 9;
+  required double scale_z             = 10;
+
+  required string material            = 11;
+  required uint32 id                  = 12;
+}

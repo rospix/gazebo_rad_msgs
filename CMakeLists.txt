@@ -27,9 +27,13 @@ foreach(ITR ${GAZEBO_INCLUDE_DIRS})
 endforeach()
 
 set(msgs
+  gazebo_msgs/RadiationObstacle.proto
   gazebo_msgs/RadiationSource.proto
 )
 
+# set(msgs
+#   gazebo_msgs/RadiationObstacle.proto
+# )
 ################################################
 ## Declare ROS messages, services and actions ##
 ################################################
@@ -37,6 +41,11 @@ set(msgs
 add_message_files(DIRECTORY ros_msgs/radiation_source FILES
 
   RadiationSource.msg
+  )
+
+add_message_files(DIRECTORY ros_msgs/radiation_obstacle FILES
+
+  RadiationObstacle.msg
   )
 
 add_message_files(DIRECTORY ros_msgs/misc FILES
