@@ -58,6 +58,12 @@ add_message_files(DIRECTORY ros_msgs/plotting FILES
   Cone.msg
   )
 
+add_message_files(DIRECTORY ros_msgs/plotting FILES
+
+  Ellipse.msg
+  )
+
+
 ## Generate added messages and services with any dependencies listed here
 generate_messages(DEPENDENCIES
 
