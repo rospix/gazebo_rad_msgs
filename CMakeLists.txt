@@ -41,6 +41,8 @@ set(msgs
 add_message_files(DIRECTORY ros_msgs/radiation_source FILES
 
   RadiationSource.msg
+  DebugSetActivity.msg
+  DebugSetMaterial.msg
   )
 
 add_message_files(DIRECTORY ros_msgs/radiation_obstacle FILES
