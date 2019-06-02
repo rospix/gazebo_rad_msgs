@@ -1,1 +1,0 @@
-radiation_obstacle/RadiationObstacle.msg
