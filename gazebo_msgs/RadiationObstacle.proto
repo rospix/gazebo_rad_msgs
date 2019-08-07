@@ -18,7 +18,4 @@ message RadiationObstacle
 
   required string material            = 11;
   required uint32 id                  = 12;
-  /* required double density             = 13; */
-  /* required double mac60kev            = 14; */
-  /* required double mac600kev           = 15; */
 }

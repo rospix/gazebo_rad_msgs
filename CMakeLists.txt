@@ -29,6 +29,7 @@ endforeach()
 set(msgs
   gazebo_msgs/RadiationObstacle.proto
   gazebo_msgs/RadiationSource.proto
+  gazebo_msgs/Termination.proto
 )
 
 # set(msgs
