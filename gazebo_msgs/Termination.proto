@@ -1,7 +1,0 @@
-syntax = "proto2";
-package gazebo_rad_msgs.msgs;
-
-message Termination
-{
-  required uint32 id = 1;
-}

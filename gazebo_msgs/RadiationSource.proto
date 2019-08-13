@@ -8,6 +8,5 @@ message RadiationSource
   required double z                  = 3;
   required string material           = 4;
   required double activity           = 5;
-  required double energy             = 6;
-  required uint32 id                 = 7;
+  required uint32 id                 = 6;
 }
