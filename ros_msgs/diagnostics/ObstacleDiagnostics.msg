@@ -1,0 +1,7 @@
+int32 id
+string material
+geometry_msgs/Vector3 size
+geometry_msgs/Vector3 world_pos
+geometry_msgs/Quaternion world_rot
+geometry_msgs/Vector3 relative_pos
+geometry_msgs/Quaternion relative_rot
