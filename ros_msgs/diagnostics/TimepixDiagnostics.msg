@@ -1,5 +1,5 @@
 time stamp
-int32 id
+int32 gazebo_id
 float64 exposition_time
 string material
 geometry_msgs/Vector3 size
