@@ -11,14 +11,14 @@ message RadiationObstacle
   required double ori_x               = 5;
   required double ori_y               = 6;
   required double ori_z               = 7;
+  
+  required double size_x              = 8;
+  required double size_y              = 9;
+  required double size_z              = 10;
 
-  required double scale_x             = 8;
-  required double scale_y             = 9;
-  required double scale_z             = 10;
-
-  required string material            = 11;
-  required double density             = 12;
-  required double mac60kev            = 13;
-  required double mac600kev           = 14;
-  required uint32 id                  = 15;
+  /* Collision types:
+  0 = sphere, 1 = cylinder, 2 = box */
+  required uint32 collision_type      = 11; 
+  required string material            = 12;
+  required uint32 id                  = 13;
 }

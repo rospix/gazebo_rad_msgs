@@ -1,6 +1,6 @@
 time stamp
 geometry_msgs/Pose pose
-gazebo_rad_msgs/Vector3 size
+geometry_msgs/Vector3 size
 string material
 float64 density
 float64 mac60kev

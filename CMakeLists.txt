@@ -50,11 +50,6 @@ add_message_files(DIRECTORY ros_msgs/radiation_obstacle FILES
   RadiationObstacle.msg
   )
 
-add_message_files(DIRECTORY ros_msgs/misc FILES
-
-  Vector3.msg
-  )
-
 add_message_files(DIRECTORY ros_msgs/plotting FILES
 
   Cone.msg
@@ -70,7 +65,20 @@ add_message_files(DIRECTORY ros_msgs/timepix FILES
   Timepix.msg
   )
 
+add_message_files(DIRECTORY ros_msgs/diagnostics FILES
 
+  TimepixDiagnostics.msg
+  )
+
+add_message_files(DIRECTORY ros_msgs/diagnostics FILES
+
+  SourceDiagnostics.msg
+  )
+
+add_message_files(DIRECTORY ros_msgs/diagnostics FILES
+
+  ObstacleDiagnostics.msg
+  )
 
 ## Generate added messages and services with any dependencies listed here
 generate_messages(DEPENDENCIES

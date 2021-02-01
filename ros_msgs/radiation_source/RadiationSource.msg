@@ -1,7 +1,5 @@
 time stamp
-float64 x
-float64 y
-float64 z
+int32 id
 float64 activity
 string material
-int32 id
+geometry_msgs/Vector3 world_pos
