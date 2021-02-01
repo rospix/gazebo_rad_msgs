@@ -52,11 +52,6 @@ add_message_files(DIRECTORY ros_msgs/radiation_obstacle FILES
 
 add_message_files(DIRECTORY ros_msgs/plotting FILES
 
-  Cone.msg
-  )
-
-add_message_files(DIRECTORY ros_msgs/plotting FILES
-
   Ellipse.msg
   )
 
