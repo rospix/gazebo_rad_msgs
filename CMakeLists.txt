@@ -1,7 +1,8 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.1.2)
 project(gazebo_rad_msgs)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -fno-diagnostics-color")
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -29,6 +30,7 @@ endforeach()
 set(msgs
   gazebo_msgs/RadiationObstacle.proto
   gazebo_msgs/RadiationSource.proto
+  gazebo_msgs/Termination.proto
 )
 
 # set(msgs

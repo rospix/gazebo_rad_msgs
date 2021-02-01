@@ -1,6 +1,4 @@
-# those are just symlinks
 ros_msgs/*.msg
-ros_srvs/*.srv
 
 # Prerequisites
 *.d
