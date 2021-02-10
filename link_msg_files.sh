@@ -5,18 +5,18 @@ MY_PATH=`( cd "$MY_PATH" && pwd )`
 
 # delete old links
 cd "$MY_PATH"
-for file in `find ros_msgs/*.msg -type l && find ros_srv/*.srv -type l`; do
+for file in `find msg/*.msg -type l > /dev/null 2>&1 && find srv/*.srv -type l > /dev/null 2>&1`; do
   rm "$file"
 done
 
 # create new msg links
-cd "$MY_PATH/ros_msgs"
-for file in $(find **/*.msg -type f); do
+cd "$MY_PATH/msg" > /dev/null 2>&1
+for file in $(find **/*.msg -type f > /dev/null 2>&1); do
   ln -sf "$file" $(basename $file)
 done
 
 # create new srv links
-cd "$MY_PATH/ros_srvs"
-for file in $(find **/*.srv -type f); do
+cd "$MY_PATH/srv" > /dev/null 2>&1
+for file in $(find **/*.srv -type f > /dev/null 2>&1); do
   ln -sf "$file" $(basename $file)
 done
