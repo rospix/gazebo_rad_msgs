@@ -69,6 +69,11 @@ add_message_files(DIRECTORY ros_msgs/diagnostics FILES
 
 add_message_files(DIRECTORY ros_msgs/diagnostics FILES
 
+  Timepix3Diagnostics.msg
+  )
+
+add_message_files(DIRECTORY ros_msgs/diagnostics FILES
+
   SourceDiagnostics.msg
   )
 
